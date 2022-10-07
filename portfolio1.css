@@ -1,0 +1,169 @@
+body {
+position: absolute;
+color:black;
+font-family: 'Kanit', sans-serif;
+font-weight: 300;
+font-style: normal;
+text-align: left;
+}
+
+/* Header */
+#headerlogo {
+  position: fixed;
+  width: 3vw;
+  left: 4vw;
+  top: 5vh;
+  z-index: 100;
+  cursor: default;
+}
+#headername {
+  position: fixed;
+  text-align: left;
+  width: 10vw;
+  left: 8vw;
+  top: 5vh;
+  font-weight: 300;
+  font-size: 20px;
+  z-index: 100;
+  cursor: default;
+}
+
+/* Websites */
+#header1 {
+  position: fixed;
+  text-align: right;
+  width: 6vw;
+  right: 21vw;
+  top: 5vh;
+  font-weight: 600;
+  font-size: 20px;
+  z-index: 100;
+  cursor: default;
+  color:black;
+  /* background-color: red; */
+}
+#header2 {
+  position: fixed;
+  text-align: right;
+  width: 6vw;
+  right: 13vw;
+  top: 5vh;
+  font-weight: 300;
+  font-size: 20px;
+  z-index: 100;
+  cursor:pointer;
+  color:black;
+}
+#header3 {
+  position: fixed;
+  text-align: right;
+  width: 6vw;
+  right: 5vw;
+  top: 5vh;
+  font-weight: 300;
+  font-size: 20px;
+  z-index: 100;
+  cursor:pointer;
+  color:black;
+}
+
+/* Contact and Other */
+#contact {
+  position: fixed;
+  text-align: right;
+  width: 40vw;
+  right: 5vw;
+  bottom: 5vh;
+  font-size: 18px;
+  z-index: 100;
+  cursor: default;
+}
+#contact1 {
+  color:black;
+}
+#contact2 {
+  color:black;
+}
+#contact3 {
+  color:black;
+}
+#other {
+  position: fixed;
+  text-align: left;
+  width: 20vw;
+  left: 5vw;
+  bottom: 5vh;
+  font-size: 20px;
+  z-index: 100;
+  cursor: e-resize;
+}
+
+/* Title and Hover */
+#title {
+  position: fixed;
+  text-align: left;
+  width: 40vw;
+  left: 5vw;
+  top: 42vh;
+  font-weight: 200;
+  font-size: 30px;
+  z-index: 100;
+  cursor: default;
+  height: 4vh;
+}
+#titlename {
+  position: fixed;
+  text-align: left;
+  width: 40vw;
+  left: 5vw;
+  top: 44vh;
+  height: 12vh;
+  font-weight: 600;
+  font-size: 70px;
+  z-index: 100;
+  color:black;
+  cursor: default;
+}
+.rectangle{
+  position: fixed;
+  background-color: white;
+  height:100vh;
+  top: 0vh;
+  left: 0vw;
+  width: 40vw;
+  opacity: 1;
+  z-index: -10;
+}
+
+/* Image and Introduction */
+#aboutdescription {
+  position: absolute;
+  text-align: left;
+  width: 55vw;
+  /* background-color: red; */
+  height:10vh;
+  left: 105vw;
+  top: 45vh;
+  font-weight: 300;
+  font-size: 20px;
+  z-index: -11;
+  cursor: e-resize;
+}
+#space {
+  position: absolute;
+  width: 5vw;
+  height:12vh;
+  left: 160vw;
+  top: 44vh;
+  z-index: -11;
+  cursor: default;
+}
+#aboutimage {
+  position: absolute;
+  width: 55vw;
+  height:62vh;
+  left: 40vw;
+  top: 19vh;
+  z-index: -111;
+  cursor: e-resize;
+}
