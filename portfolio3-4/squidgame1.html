@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Squid Game</title>
+    <link rel="shortcut icon" href="icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="squidgame1.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <style>
+    body {
+  position: absolute;
+  color:white;
+  background-color:black;
+  width: 300px;
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+}
+
+#logo1 {
+  /* display: none; */
+  position: fixed;
+  top: 25vh;
+  left: 40vw;
+  width: 20vw;
+  z-index: 1;
+}
+#logo2 {
+  display: none;
+  position: fixed;
+  top: 30vh;
+  left: 38vw;
+  width: 24vw;
+  z-index: 2;
+}
+#start {
+  /* display: none; */
+  color:white;
+  font-weight: bold;
+  position: fixed;
+  font-size: 60px;
+  left: 47vw;
+  top: 56vh;
+  z-index: 100;
+}
+    </style>
+  </head>
+  <body>
+    <span id=start><a href=squidgame2.html style="text-decoration:none">Start</a></span>
+    <img id=logo1 src="logo1.png">
+    <a href=https://www.netflix.com/title/81040344><img id=logo2 src="logo2.png"></a>
+  </body>
+</html>

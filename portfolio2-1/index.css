@@ -1,0 +1,306 @@
+body {
+position: absolute;
+color:black;
+font-family: 'Kanit', sans-serif;
+font-weight: 300;
+font-style: normal;
+text-align: left;
+}
+
+/* Header */
+#headerlogo {
+  position: fixed;
+  width: 3vw;
+  left: 4vw;
+  top: 5vh;
+  z-index: 100;
+  cursor: default;
+}
+#headername {
+  position: fixed;
+  text-align: left;
+  width: 10vw;
+  left: 8vw;
+  top: 5vh;
+  font-weight: 300;
+  font-size: 20px;
+  z-index: 100;
+  cursor: default;
+}
+
+/* Websites */
+#header1 {
+  position: fixed;
+  text-align: right;
+  width: 6vw;
+  right: 21vw;
+  top: 5vh;
+  font-weight:300;
+  font-size: 20px;
+  z-index: 100;
+  cursor:pointer;
+  color:black;
+  /* background-color: red; */
+}
+#header2 {
+  position: fixed;
+  text-align: right;
+  width: 6vw;
+  right: 13vw;
+  top: 5vh;
+  font-weight: 600;
+  font-size: 20px;
+  z-index: 100;
+  cursor:pointer;
+  color:black;
+}
+#header3 {
+  position: fixed;
+  text-align: right;
+  width: 6vw;
+  right: 5vw;
+  top: 5vh;
+  font-weight: 300;
+  font-size: 20px;
+  z-index: 100;
+  cursor:pointer;
+  color:black;
+}
+
+/* Contact and Other */
+#contact {
+  position: absolute;
+  text-align: right;
+  width: 55vw;
+  left: 40vw;
+  top: 397vh;
+  font-weight: 200;
+  font-size: 18px;
+  cursor:default;
+  z-index: -11;
+}
+#contact1 {
+  color:black;
+}
+#contact2 {
+  color:black;
+}
+#contact3 {
+  color:black;
+}
+#other {
+  position: absolute;
+  text-align: right;
+  width: 20vw;
+  height:3vh;
+  left: 75vw;
+  top: 91vh;
+  font-size: 20px;
+  z-index: -100;
+  cursor: default;
+  /* background-color: red; */
+}
+
+
+/* Title and Hover */
+#title {
+  position: fixed;
+  text-align: left;
+  width: 40vw;
+  left: 5vw;
+  top: 42vh;
+  font-weight: 200;
+  font-size: 30px;
+  z-index: 100;
+  cursor: default;
+  height: 4vh;
+}
+#titlename {
+  position: fixed;
+  text-align: left;
+  width: 40vw;
+  left: 5vw;
+  top: 44vh;
+  height: 12vh;
+  font-weight: 600;
+  font-size: 70px;
+  z-index: 100;
+  color:black;
+  cursor: default;
+}
+.rectangle{
+  position: fixed;
+  background-color: white;
+  height:13vh;
+  top: 0vh;
+  left: 0vw;
+  width: 100vw;
+  opacity: 1;
+  z-index: -10;
+}
+
+/* Project Name */
+#name {
+  font-family: 'Arvo', serif;
+  position: fixed;
+  width: 30vw;
+  left: 5vw;
+  top: 46.5vh;
+  height:10vh;
+  font-weight: 700;
+  font-size: 40px;
+  cursor:default;
+  z-index: -11;
+  color:black;
+}
+#description {
+  position: fixed;
+  width: 30vw;
+  left: 5vw;
+  top: 43.5vh;
+  font-weight: 200;
+  font-size: 20px;
+  cursor:pointer;
+  z-index: -11;
+  height:3vh;
+  /* background-color:red; */
+  cursor: default;
+}
+
+/* Description */
+#text1 {
+  position: absolute;
+  width: 55vw;
+  left: 40vw;
+  top: 102vh;
+  font-weight: 200;
+  font-size: 20px;
+  cursor:default;
+  z-index: -11;
+  text-align: left;
+  height:36vh;
+  /* background-color: red; */
+}
+#text1-1 {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: left;
+  height:10vh;
+}
+#text2 {
+  position: absolute;
+  width: 55vw;
+  left: 40vw;
+  top: 218vh;
+  font-weight: 200;
+  font-size: 20px;
+  cursor:default;
+  z-index: -11;
+  text-align: left;
+  height:15vh;
+  /* background-color: red; */
+}
+
+/* Image */
+#image1-1 {
+  position: absolute;
+  width: 26vw;
+  height:60vh;
+  left: 40vw;
+  top: 20vh;
+  z-index: -11;
+  cursor:zoom-in;
+}
+#image1-2 {
+  position: absolute;
+  width: 26vw;
+  height:60vh;
+  left: 69vw;
+  top: 20vh;
+  z-index: -11;
+  cursor:zoom-in;
+}
+/* #image1-3 {
+  position: absolute;
+  width: 55vw;
+  height:126.91vh;
+  left: 40vw;
+  top: 139vh;
+  z-index: -11;
+}
+#image1-4 {
+  position: absolute;
+  width: 55vw;
+  height:126.91vh;
+  left: 40vw;
+  top: 270.91vh;
+  z-index: -11;
+} */
+#image1-5 {
+  position: absolute;
+  width: 32.2vw;
+  height:74vh;
+  left: 51.4vw;
+  top: 13vh;
+  z-index: -11;
+  cursor:zoom-out;
+  display:none;
+}
+#image1-6 {
+  position: absolute;
+  width: 32.2vw;
+  height:74vh;
+  left: 51.4vw;
+  top: 13vh;
+  z-index: -11;s
+  cursor:zoom-out;
+  display:none;
+}
+#image1-7 {
+  position: absolute;
+  width: 55vw;
+  height:64vh;
+  left: 40vw;
+  top: 146vh;
+  z-index: -11;
+  cursor:default;
+}
+#image1-8 {
+  position: absolute;
+  width: 55vw;
+  height:72vh;
+  left: 40vw;
+  top: 241vh;
+  z-index: -11;
+  cursor:default;
+}
+#image1-9 {
+  position: absolute;
+  width: 55vw;
+  height: 72vh;
+  left: 40vw;
+  top: 319vh;
+  z-index: -11;
+  cursor:default;
+}
+
+/* Next */
+#nextproject {
+  position: fixed;
+  width: 15vw;
+  right: 65vw;
+  bottom: 5vh;
+  font-weight: 200;
+  font-size: 20px;
+  cursor:pointer;
+  z-index: 100;
+  cursor: default;
+  text-align: right;
+}
+#next1 {
+  cursor: pointer;
+  color: black;
+}
+#next2 {
+  font-family: 'Arvo', serif;
+}

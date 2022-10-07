@@ -1,0 +1,348 @@
+body {
+  color: white;
+  background-color: #18191A;
+  font-family: Rigid Square;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+
+  position: absolute
+  z-index: 0;
+  opacity: 1;
+  width: vw;
+  left: vw;
+  top: vh;
+}
+
+#title {
+  font-size: 55px;
+}
+
+#section1 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 10vw;
+}
+#section2 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 70vw;
+}
+#section3 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 140vw;
+}
+#section4 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 210vw;
+}
+#section5 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 280vw;
+}
+#section6 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 350vw;
+}
+#section7 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 420vw;
+}
+#section8 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 490vw;
+}
+#section9 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 560vw;
+}
+#section10 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 630vw;
+}
+#section11 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 700vw;
+}
+#section12 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 770vw;
+}
+#section13 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 840vw;
+}
+#section14 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 910vw;
+}
+#section15 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 980vw;
+}
+#section16 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 1050vw;
+}
+#section17 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 1120vw;
+}
+#section18 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 1190vw;
+}
+#section19 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 1260vw;
+}
+#section20 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 1330vw;
+}
+#section21 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 1400vw;
+}
+#section22 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 1470vw;
+}
+#section23 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 1540vw;
+}
+#section24 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 1610vw;
+}
+#section25 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 1680vw;
+}
+#section26 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 1750vw;
+}
+#section27 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 1820vw;
+}
+#section28 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 1960vw;
+}
+#section29 {
+  position: absolute;
+  width: 50vw;
+  top: 8vh;
+  left: 2030vw;
+}
+
+
+.drawing {
+  position: absolute;
+  top: 34vh;
+  width: 60vw;
+  height: 56vh;
+}
+#drawing1 {
+  left: 140vw;
+}
+#drawing2 {
+  left: 490vw;
+}
+#drawing3 {
+  left: 770vw;
+}
+
+.road {
+  position: absolute;
+  top: 62vh;
+  width: 60vw;
+  height: 28vh;
+}
+#road1 {
+  left: 0vw;
+}
+#road2 {
+  left: 60vw;
+}
+#road3 {
+  left: 90vw;
+}
+#road4 {
+  left: 200vw;
+}
+#road5 {
+  left: 260vw;
+}
+#road6 {
+  left: 320vw;
+}
+#road7 {
+  left: 380vw;
+}
+#road8 {
+  left: 430vw;
+}
+#road9 {
+  left: 550vw;
+}
+#road10 {
+  left: 610vw;
+}
+#road11 {
+  left: 670vw;
+}
+#road12 {
+  left: 710vw;
+}
+#road13 {
+  left: 770vw;
+}
+#road14 {
+  left: 830vw;
+}
+#road15 {
+  left: 890vw;
+}
+#road16 {
+  left: 950vw;
+}
+#road17 {
+  left: 1010vw;
+}
+#road18 {
+  left: 1070vw;
+}
+#road19 {
+  left: 1130vw;
+}
+#road20 {
+  left: 1190vw;
+}
+#road21 {
+  left: 1250vw;
+}
+#road22 {
+  left: 1310vw;
+}
+#road23 {
+  left: 1370vw;
+}
+#road24 {
+  left: 1430vw;
+}
+#road25 {
+  left: 1490vw;
+}
+#road26 {
+  left: 1550vw;
+}
+#road27 {
+  left: 1610vw;
+}
+#road28 {
+  left: 1670vw;
+}
+#road29 {
+  left: 1730vw;
+}
+#road30 {
+  left: 1790vw;
+}
+#road31 {
+  left: 1850vw;
+}
+#road32 {
+  left: 1910vw;
+}
+#road33 {
+  left: 1970vw;
+}
+#road34 {
+  left: 2030vw;
+}
+#road35 {
+  left: 2090vw;
+}
+
+.img {
+  position: fixed;
+  left: 8vw;
+  top: 65vh;
+  width: 15vw;
+  height: 28vh;
+}
+#image1 {
+  z-index: 4;
+  /* display: none; */
+}
+#image2 {
+  z-index: 3;
+  display: none;
+}
+#image3 {
+  z-index: 2;
+  display: none;
+}
+#image4 {
+  z-index: 1;
+  display: none;
+}

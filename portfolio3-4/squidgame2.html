@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Glass Stepping Stones</title>
+    <link rel="shortcut icon" href="icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="squidgame2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <style>
+    body {
+  background-color:black;
+}
+
+#instructions {
+  position: absolute;
+  width: 40vw;
+  top: 10vh;
+  left: 30vw;
+  z-index:200;
+  color:white;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  text-align: Center;
+  cursor: help;
+}
+#instructions1 {
+  font-size: 25px;
+}
+#music {
+  position: absolute;
+  width: 20vw;
+  top: 55vh;
+  left: 40vw;
+  z-index:201;
+  opacity: 1;
+}
+
+#next {
+  display: none;
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  width: 100vw;
+  z-index:1001;
+}
+
+#click {
+  display: none;
+  position: fixed;
+  width: 10vw;
+  top: 20vh;
+  left: 15vw;
+  z-index:101;
+  color:white;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  text-align: Left;
+  cursor: help;
+}
+
+#left1 {
+  position: fixed;
+  top: 5vh;
+  left: 5vw;
+  width: 100px;
+}
+#left2 {
+  position: fixed;
+  top: 40vh;
+  left: 5vw;
+  width: 100px;
+}
+#left3 {
+  position: fixed;
+  top: 75vh;
+  left: 5vw;
+  width: 100px;
+}
+#right1 {
+  position: fixed;
+  top: 5vh;
+  right: 5vw;
+  width: 100px;
+}
+#right2 {
+  position: fixed;
+  top: 40vh;
+  right: 5vw;
+  width: 100px;
+}
+#right3 {
+  position: fixed;
+  top: 75vh;
+  right: 5vw;
+  width: 100px;
+}
+
+#revive2 {
+  /* display: none; */
+  position: fixed;
+  width: 12vw;
+  left: 15vw;
+  top: 10vh;
+  font-size: 30px;
+  text-align: center;
+  z-index:0;
+  font-size: 35px;
+  border: 1px solid black;
+  background-color:black;
+  font-family: 'Lato', sans-serif;
+}
+#heart1 {
+  position: fixed;
+  top: 10vh;
+  left: 15vw;
+  width: 5vw;
+  z-index:101;
+}
+#heart2 {
+  position: fixed;
+  top: 10vh;
+  left: 15vw;
+  width: 5vw;
+  z-index:100;
+}
+/* #heart3 {
+  position: fixed;
+  top: 10vh;
+  left: 23vw;
+  width: 3vw;
+  z-index:103;
+} */
+
+#L1 {
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 30vw;
+  top: 80vh;
+  font-size: 30px;
+  text-align: center;
+}
+#L2 {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 30vw;
+  top: 102vh;
+  font-size: 30px;
+  text-align: center;
+}
+#L3 {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 30vw;
+  top: 124vh;
+  font-size: 30px;
+  text-align: center;
+}
+#L4 {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 30vw;
+  top: 146vh;
+  font-size: 30px;
+  text-align: center;
+}
+#L5 {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 30vw;
+  top: 168vh;
+  font-size: 30px;
+  text-align: center;
+}
+#L6 {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 30vw;
+  top: 190vh;
+  font-size: 30px;
+  text-align: center;
+}
+#L7 {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 30vw;
+  top: 212vh;
+  font-size: 30px;
+  text-align: center;
+}
+#L8 {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 30vw;
+  top: 234vh;
+  font-size: 30px;
+  text-align: center;
+}
+
+#R1 {
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 59vw;
+  top: 80vh;
+  font-size: 30px;
+  text-align: center;
+}
+#R2 {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 59vw;
+  top: 102vh;
+  font-size: 30px;
+  text-align: center;
+}
+#R3 {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 59vw;
+  top: 124vh;
+  font-size: 30px;
+  text-align: center;
+}
+#R4 {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 59vw;
+  top: 146vh;
+  font-size: 30px;
+  text-align: center;
+}
+#R5 {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 59vw;
+  top: 168vh;
+  font-size: 30px;
+  text-align: center;
+}
+#R6 {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 59vw;
+  top: 190vh;
+  font-size: 30px;
+  text-align: center;
+}
+#R7 {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 59vw;
+  top: 212vh;
+  font-size: 30px;
+  text-align: center;
+}
+#R8 {
+  display: none;
+  position: absolute;
+  color:white;
+  background-color:white;
+  border: 1px solid white;
+  width: 10.8vw;
+  left: 59vw;
+  top: 234vh;
+  font-size: 30px;
+  text-align: center;
+}
+
+#background {
+  position: absolute;
+  top: 70vh;
+  left: 15vw;
+  width: 70vw;
+  z-index:-100;
+}
+
+    </style>
+  </head>
+  <body>
+
+  <div id=instructions><a href=https://youtu.be/IZXBEgTrJrU style="text-decoration:none">
+  <span id=instructions1>The fifth game is Glass Stepping Stones.</span>
+  <br>the stepping stones before you are made from one of two types of glass,
+  one will be tempered glass and the other will be normal glass.
+  <br>The tempered glass stepping stones as strong enough to hold the weight of two people.
+  <br>However, the normal glass will break even if just one person steps  on it.
+  <br>For this game you will guess which one of next two tiles is the tile made of the stronger tempered glass,
+  and only step on those cross the 8 pairs of tile.
+  <br> You may then cross over to the other side safely and pass this game.</a></div>
+
+  <span id=L1>blank<br>blank</span>
+  <span id=L2>blank<br>blank</span>
+  <span id=L3>blank<br>blank</span>
+  <span id=L4>blank<br>blank</span>
+  <span id=L5>blank<br>blank</span>
+  <span id=L6>blank<br>blank</span>
+  <span id=L7>blank<br>blank</span>
+  <span id=L8>blank<br>blank</span>
+
+  <span id=R1>blank<br>blank</span>
+  <span id=R2>blank<br>blank</span>
+  <span id=R3>blank<br>blank</span>
+  <span id=R4>blank<br>blank</span>
+  <span id=R5>blank<br>blank</span>
+  <span id=R6>blank<br>blank</span>
+  <span id=R7>blank<br>blank</span>
+  <span id=R8>blank<br>blank</span>
+
+  <!-- <a href=squidgame4.html>
+  <span id= revive2>Revive?</span></a> -->
+
+  <a href=squidgame3.html>
+  <img id=next src="next.png"></a>
+
+  <!-- <a href=squidgame4.html>
+  <img id=revive src="revive.png"></a> -->
+  <a href=squidgame4.html><span id=click>Click Heart to REVIVE</span></a>
+  <img id=heart1 src="heart.png">
+  <a href=squidgame4.html><img id=heart2 src="heart2.png"></a>
+  <!-- <img id=heart3 src="heart.png"> -->
+
+  <img id=background src="background.png">
+  <img id=left1 src="side1.png">
+  <img id=left2 src="side2.png">
+  <img id=left3 src="side3.png">
+  <img id=right1 src="side1.png">
+  <img id=right2 src="side2.png">
+  <img id=right3 src="side3.png">
+  <audio id=music controls src="theme.mp3">
+  </body>
+</html>
